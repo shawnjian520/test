@@ -12,7 +12,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @EnableAutoConfiguration
-@EnableTransactionManagement(order = 10) //开启事务，并设置order值，默认是Integer的最大值
+//开启事务，并设置order值，默认是Integer的最大值
+@EnableTransactionManagement(order = 10) 
 @ComponentScan(basePackages={"com.fei.springboot"})
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer{
